@@ -1,10 +1,23 @@
+import React from "react";
+import Navbar from "./components/Navbar";
+import Banner from "./components/Banner";
+import Home from "./components/Home";
+
 function App() {
   return (
-    <>
-      <h1 className="text-red-600 text-3xl flex justify-center items-center font-bold shadow-xl shadow-black">
-        PrimePixel
-      </h1>
-    </>
+    <div>
+      {/* Navbar is rendered here so it sticks to the top across all sections */}
+      <Navbar />
+
+      {/* Main content section */}
+      <header>
+        <Banner />
+      </header>
+
+      <main>
+        <Home />
+      </main>
+    </div>
   );
 }
 
